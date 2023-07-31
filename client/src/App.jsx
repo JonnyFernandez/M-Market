@@ -9,6 +9,7 @@ function App() {
     <>
       <Home/>
       <Details/> 
+      <h1>probando</h1>
     </>
   )
 }
