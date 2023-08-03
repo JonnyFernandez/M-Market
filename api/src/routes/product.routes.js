@@ -2,7 +2,7 @@ const { Router } = require('express');
 const { getProducts,  postProducts } = require('../handlers/products');
 
 
- routerProduct =Router();
+ routerProduct = Router();
 
  routerProduct
  .get('/', getProducts)
