@@ -17,6 +17,7 @@ const product = async (name) => {
         //     }
         // ]
     });
+    if( !detailProduct.length) throw Error ("El producto ingresado no existe   ");
     return detailProduct;
 };
 
@@ -45,7 +46,7 @@ const  productById = async(id)=>{
 }
 
 const createProduct = async (brand,name,price,unit,description,image,score,category ) => {
-     console.log(category);
+     
     const newProduct = await Prod.create({
         name, description, image, price, brand, unit,score
     });
