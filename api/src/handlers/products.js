@@ -8,7 +8,7 @@ const getProducts=async (req, res)=>{
          const response =await allProducts();
          return res.status(200).json(response);
      }
-     const response = await product(name)
+     const response = await product(name);
      res.status(200).json(response);
     } catch (error) {
      res.status(400).json({ error: error.message });
